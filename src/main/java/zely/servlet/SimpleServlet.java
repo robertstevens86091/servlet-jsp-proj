@@ -14,7 +14,6 @@ public class SimpleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("message", "hello I'm thinhorigami - zely");
-        req.getRequestDispatcher("index.jsp")
-            .forward(req, resp);
+      req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }
